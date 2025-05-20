@@ -48,7 +48,7 @@ with st.sidebar:
 
     
         df['sampleid_testcode'] = df['PATIENT ID'].astype(str) + '-'+ df['ACCESSION NUMBER'].astype(str)
-        df['rec_date'] = pd.to_datetime(df['RECEIVE DATE'],dayfirst=True, format="%Y-%m-%d")
+        df['rec_date'] = pd.to_datetime(df['RECEIVE DATE'],dayfirst=True, format="%Y-%m-%d %H:%M:%S")
         df['month_processed'] = df['rec_date'].dt.to_period('M')
         df['year_processed'] = df['rec_date'].dt.to_period('Y')
         a = ['AFBST','XPUT','CULTB','XPRIF']
