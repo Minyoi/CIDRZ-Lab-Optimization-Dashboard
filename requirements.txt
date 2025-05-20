@@ -3,3 +3,4 @@ joblib
 numpy
 pandasql
 plotly.express
+openpyxl
