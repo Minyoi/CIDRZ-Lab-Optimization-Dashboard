@@ -10,7 +10,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 import altair as alt
-
+import openpyxl
 
 
 
@@ -37,7 +37,7 @@ with st.sidebar:
 
     
     
-    file = st.file_uploader("Please upload the lab data extract below")
+    file = st.file_uploader("Please upload the lab data extract below", type={"xlsx"})
     
     if file is not None:
         df = pd.read_excel(file)
