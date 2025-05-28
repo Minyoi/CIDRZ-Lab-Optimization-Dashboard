@@ -36,7 +36,7 @@ with st.sidebar:
 
     
     
-    file = st.file_uploader("Please upload the lab data extract below", type=["xlsx"])
+    file = st.file_uploader("Please upload the lab data extract below", type={"xlsx"})
     
     if file is not None:
         df = pd.read_excel(file, sheet_name='Sheet 1 - TB XTRACT-042025')
