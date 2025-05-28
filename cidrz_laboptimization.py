@@ -6,8 +6,6 @@ Created on Thu May 15 18:59:52 2025
 """
 import pandas as pd
 import numpy as np
-from pandasql import sqldf
-import numpy as np
 
 import streamlit as st
 import pandas as pd
