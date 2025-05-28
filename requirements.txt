@@ -1,5 +1,11 @@
 streamlit
 joblib
+pandas
+pandasql
+numpy
+altair
+streamlit
+joblib
 numpy
 pandasql
 plotly.express
