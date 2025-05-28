@@ -10,10 +10,7 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 import altair as alt
-import openpyxl
-from openpyxl import load_workbook
-import xlsxwriter
-from openpyxl.utils.dataframe import dataframe_to_rows
+
 
 
 st.set_page_config(
@@ -39,10 +36,10 @@ with st.sidebar:
 
     
     
-    file = st.file_uploader("Please upload the lab data extract below", type={"xlsx"})
+    file = st.file_uploader("Please upload the lab data extract below", type=["xlsx"])
     
     if file is not None:
-        df = pd.read_excel(file)
+        df = pd.read_excel(file, sheet_name='Sheet 1 - TB XTRACT-042025')
         #st.write(df)      
 
     
