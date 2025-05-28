@@ -1,7 +1,6 @@
 streamlit
 joblib
 pandas
-pandasql
 numpy
 altair
 streamlit
