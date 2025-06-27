@@ -13,21 +13,7 @@ import altair as alt
 import streamlit as st
 from streamlit_gsheets import GSheetsConnection
 
-# Create a connection object.
-conn = st.connection("gsheets", type=GSheetsConnection)
 
-df = conn.read(worksheet="https://docs.google.com/spreadsheets/d/1W7KvSPMLNHFKYC9fh_l3t9cbt3_GsSxe4fU4vXzhUB8/edit?gid=1419249146#gid=1419249146")
-
-# Print results.
-for row in df.itertuples():
-    st.write(f"{row.name} has a :{row.pet}:")
-    
-    df = conn.read(
-    worksheet="TB-RECOVERY-JUNE",
-    ttl="10m",
-    usecols=[0, 1],
-    nrows=3,
-)
 
 st.set_page_config(
     page_title="Lab Optimization Dashboard",
