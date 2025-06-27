@@ -6,7 +6,5 @@ altair
 numpy
 pandasql
 openpyxl
-streamlit_gsheets
-GSheetsConnection
 
 
