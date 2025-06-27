@@ -11,7 +11,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import streamlit as st
-from streamlit_gsheets import GSheetsConnection
+
 
 
 
